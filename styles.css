@@ -1,3 +1,89 @@
+/* Skills and Projects Section Styles */
+.skills-container,
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skill-category,
+.project-card {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category h3,
+.project-card h3 {
+  color: #ff8c42; /* Orange */
+  margin-top: 0;
+}
+
+.skill-category ul,
+.project-card p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #0073e6; /* Blue */
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #ff8c42; /* Orange */
+}
+
+/* Hover Effects */
+.skill-category:hover,
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Styles */
+body.dark-mode section {
+  background-color: #2a2a2a;
+  color: #f4f4f4;
+}
+
+body.dark-mode .skill-category,
+body.dark-mode .project-card {
+  background-color: #333; /* Darker than sections */
+  color: #f4f4f4;
+}
+
+body.dark-mode .skill-category h3,
+body.dark-mode .project-card h3 {
+  color: #ff8c42; /* Orange */
+}
+
+body.dark-mode .skill-category ul li,
+body.dark-mode .project-card p {
+  color: #f4f4f4;
+}
+
+body.dark-mode .project-card a {
+  background-color: #ff8c42; /* Orange */
+  color: #1a1a1a; /* Dark background */
+}
+
+body.dark-mode .project-card a:hover {
+  background-color: #0073e6; /* Blue */
+  color: white;
+}
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -150,18 +236,32 @@ body.dark-mode {
     color: #131313;
   }
   
-  /* Dark Mode Styles for Skills */
-  body.dark-mode .skill-category {
-    background-color: #535252;
-  }
-  
-  body.dark-mode .skill-category h3 {
-    color: #ff8c42; /* Orange */
-  }
-  
-  body.dark-mode .skill-category ul li {
-    color: #f4f4f4;
-  }
+  /* Dark Mode Styles for Cards */
+body.dark-mode .skill-category,
+body.dark-mode .project-card {
+  background-color: #333; /* Slightly darker than sections */
+  color: #f4f4f4;
+}
+
+body.dark-mode .skill-category h3,
+body.dark-mode .project-card h3 {
+  color: #ff8c42; /* Orange */
+}
+
+body.dark-mode .skill-category ul li,
+body.dark-mode .project-card p {
+  color: #f4f4f4;
+}
+
+body.dark-mode .project-card a {
+  background-color: #ff8c42; /* Orange */
+  color: #1a1a1a; /* Dark background */
+}
+
+body.dark-mode .project-card a:hover {
+  background-color: #0073e6; /* Blue */
+  color: white;
+}
 
 
 
