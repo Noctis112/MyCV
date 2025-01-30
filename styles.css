@@ -341,28 +341,7 @@ body.dark-mode .project-card a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
   }
   
-  /* Dark Mode Styles for Projects */
-  body.dark-mode .project-card {
-    background-color: #2a2a2a;
-  }
-  
-  body.dark-mode .project-card h3 {
-    color: #ff8c42; /* Orange */
-  }
-  
-  body.dark-mode .project-card p {
-    color: #f4f4f4;
-  }
-  
-  body.dark-mode .project-card a {
-    background-color: #ff8c42; /* Orange */
-    color: #1a1a1a; /* Dark background */
-  }
-  
-  body.dark-mode .project-card a:hover {
-    background-color: #0073e6; /* Blue */
-    color: white;
-  }
+
 
   @media (max-width: 768px) {
     header h1 {
